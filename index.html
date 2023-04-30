@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Christopher Quiogue - Portfolio</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="script.js"></script>
   </head>
@@ -18,6 +21,23 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <ul id="socials">
+          <li>
+            <a href="https://github.com/cquiogue" title="Github">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.linkedin.com/in/cquiogue" title="LinkedIn">
+              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:cquiogue@gmail.com" title="Email">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -25,9 +45,16 @@
       <section id="home">
         <h1>Hi! I'm Christopher Quiogue.</h1>
         <p>I'm a software engineer coming from the film / TV world.</p>
+        <div id="resume">
+          <form method="get" action="assets/cquiogueResume.pdf">
+            <button>Download Résumé</button>
+          </form>
+        </div>
       </section>
 
       <section id="about">
+        <h2>About Me</h2>
+        <br />
         <p>
           As a tech professional with a diverse background, I bring a unique
           perspective to the world of coding. With 15 years of experience in
@@ -39,6 +66,7 @@
           building websites for restaurants during the Flash era, I've gained
           hands-on experience in web development and design.
         </p>
+        <br />
         <p>
           Now, I'm taking my coding skills to the next level. I've completed a
           full-stack bootcamp with Nucamp, the prestigious Harvard CS50 course,
@@ -51,6 +79,7 @@
           the entertainment industry to create innovative and cutting-edge
           solutions.
         </p>
+        <br />
         <p>
           I'm excited about the opportunities that lie ahead in the tech
           industry, and I'm committed to becoming a proficient and confident
@@ -61,20 +90,24 @@
 
       <section id="projects">
         <h2>Projects</h2>
+        <br />
         <div class="projects-container">
           <a href="https://cquiogue.github.io/mixedMessages/" class="project">
-            <img src="./images/mixedmessages.png" alt="Project 1" />
+            <img
+              src="./images/mixedmessages.png"
+              alt="Final Fantasy Generator" />
             <p class="project-title">Final Fantasy Random Message Generator</p>
           </a>
           <a
             href="https://cquiogue.github.io/expandingCardsPersona/"
-            class="project"
-          >
+            class="project">
             <img src="./images/expandingcards.png" alt="Project 2" />
-            <p class="project-title">Persona Wallpaper Expanding Cards</p>
+            <p class="Persona Wallpaper Cards">
+              Persona Wallpaper Expanding Cards
+            </p>
           </a>
           <a href="https://cquiogue.github.io/progressSteps/" class="project">
-            <img src="./images/progresssteps.png" alt="Project 3" />
+            <img src="./images/progresssteps.png" alt="Progress Steps" />
             <p class="project-title">Progress Steps</p>
           </a>
         </div>
@@ -82,7 +115,7 @@
 
       <section id="contact">
         <h2>Contact</h2>
-        <form action="#" method="post">
+        <form action="https://formspree.io/f/xnqywnnn" method="POST">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required />
 
