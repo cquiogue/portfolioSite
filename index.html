@@ -1,142 +1,499 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Christopher Quiogue - Portfolio</title>
-    <link rel="stylesheet" href="./style.css" />
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="script.js"></script>
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Topher Q: Software Engineer</title>
   </head>
+
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <ul id="socials">
-          <li>
-            <a href="https://github.com/cquiogue" title="Github">
-              <i class="fa fa-github" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li>
-            <a href="http://www.linkedin.com/in/cquiogue" title="LinkedIn">
-              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:cquiogue@gmail.com" title="Email">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section id="home">
-        <h1>Hi! I'm Christopher Quiogue.</h1>
-        <p>I'm a software engineer coming from the film / TV world.</p>
-        <div id="resume">
-          <form method="get" action="assets/cquiogueResume.pdf">
-            <button>Download Résumé</button>
-          </form>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" onclick="collapseNavbar()">Topher Q</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="collapseNavbar()">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" onclick="collapseNavbar()">
+                About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects" onclick="collapseNavbar()">
+                Projects
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" onclick="collapseNavbar()">
+                Contact
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.github.com/cquiogue"
+                onclick="collapseNavbar()">
+                <i class="bi bi-github"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="http://www.linkedin.com/in/cquiogue"
+                onclick="collapseNavbar()">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="mailto:cquiogue@gmail.com"
+                onclick="collapseNavbar()">
+                <i class="bi bi-envelope"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-      </section>
+      </div>
+    </nav>
 
-      <section id="about">
-        <h2>About Me</h2>
-        <br />
-        <p>
-          As a tech professional with a diverse background, I bring a unique
-          perspective to the world of coding. With 15 years of experience in
-          film/TV, working on camera, editing, and as a talent (actor/stunt
-          performer), I've honed my skills in creativity, problem-solving, and
-          attention to detail. I've always been passionate about coding and have
-          pursued it as a hobby alongside my work in the entertainment industry.
-          From creating customized MySpace layouts for bands in my teens to
-          building websites for restaurants during the Flash era, I've gained
-          hands-on experience in web development and design.
-        </p>
-        <br />
-        <p>
-          Now, I'm taking my coding skills to the next level. I've completed a
-          full-stack bootcamp with Nucamp, the prestigious Harvard CS50 course,
-          and Meta's front-end web developer program. Currently, I'm furthering
-          my knowledge through the Codecademy full-stack program, constantly
-          seeking to improve and expand my skillset. In addition to my coding
-          prowess, I'm proficient in Adobe Photoshop, Audition, Illustrator and
-          Premiere, making media-related editing a breeze for me. I'm eager to
-          leverage my creativity, technical skills, and extensive experience in
-          the entertainment industry to create innovative and cutting-edge
-          solutions.
-        </p>
-        <br />
-        <p>
-          I'm excited about the opportunities that lie ahead in the tech
-          industry, and I'm committed to becoming a proficient and confident
-          developer who can bring unique perspectives to any project. Let's
-          create some amazing things together!
-        </p>
-      </section>
+    <section
+      id="banner"
+      class="banner position-relative d-flex align-items-center"
+      style="
+        background-image: url('images/bg.jpg');
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+      ">
+      <div
+        class="overlay position-absolute w-100 h-100 bg-black opacity-75"></div>
 
-      <section id="projects">
-        <h2>Projects</h2>
-        <br />
-        <div class="projects-container">
-          <a href="https://cquiogue.github.io/mixedMessages/" class="project">
-            <img
-              src="./images/mixedmessages.png"
-              alt="Final Fantasy Generator" />
-            <p class="project-title">Final Fantasy Random Message Generator</p>
-          </a>
-          <a
-            href="https://cquiogue.github.io/expandingCardsPersona/"
-            class="project">
-            <img src="./images/expandingcards.png" alt="Project 2" />
-            <p class="Persona Wallpaper Cards">
-              Persona Wallpaper Expanding Cards
-            </p>
-          </a>
-          <a href="https://cquiogue.github.io/progressSteps/" class="project">
-            <img src="./images/progresssteps.png" alt="Progress Steps" />
-            <p class="project-title">Progress Steps</p>
-          </a>
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-lg-12 text-center text-lg-start">
+            <h1 class="display-1 text-white mb-0">Topher Quiogue</h1>
+            <h2 class="text-white">Software Engineer</h2>
+          </div>
         </div>
-      </section>
+        <br />
+        <br />
+        <div
+          class="row pt-5 px-5 mt-5 display-5 text-white text-center justify-content-center">
+          <div class="p3 col-2">
+            <i class="devicon-html5-plain-wordmark colored"></i>
+          </div>
+          <div class="p3 col-2">
+            <i class="devicon-css3-plain-wordmark colored"></i>
+          </div>
+          <div class="p3 col-2">
+            <i class="devicon-tailwindcss-plain colored"></i>
+          </div>
+          <div class="p3 col-2">
+            <i class="devicon-bootstrap-plain-wordmark colored"></i>
+          </div>
+          <div class="p3 col-2">
+            <i class="devicon-javascript-plain colored"></i>
+          </div>
+          <div class="p3 col-2">
+            <i class="devicon-react-original-wordmark colored"></i>
+          </div>
+          <div class="p3 col-2">
+            <i class="devicon-nextjs-plain"></i>
+          </div>
+          <div class="p3 col-2">
+            <i class="devicon-nodejs-plain-wordmark colored"></i>
+          </div>
+          <div class="p3 col-2">
+            <i class="devicon-mongodb-plain-wordmark colored"></i>
+          </div>
+          <div class="p3 col-2">
+            <i class="devicon-git-plain-wordmark colored"></i>
+          </div>
+          <div class="p3 col-2">
+            <i class="devicon-github-original-wordmark"></i>
+          </div>
+          <div class="p3 col-2">
+            <i class="devicon-photoshop-plain colored"></i>
+          </div>
+          <div class="p3 col-2">
+            <i class="devicon-illustrator-plain colored"></i>
+          </div>
+          <div class="p3 col-2">
+            <i class="devicon-premierepro-plain"></i>
+          </div>
+        </div>
+      </div>
+      <br />
+    </section>
+    <!-- About Me -->
+    <section class="row mb-3" id="about">
+      <h2 class="mt-4 pt-5 text-center">About Me</h2>
+      <div class="col-12 col-md-4 text-center text-md-end mb-3 mb-md-4 p-3">
+        <img
+          src="images/profile.jpg"
+          class="img-fluid rounded-circle border border-4 border-dark b5 mt-md-4 p-1"
+          alt="Profile Photo"
+          width="250px"
+          height="auto" />
+      </div>
+      <div
+        class="col-12 col-md-8 px-4 mt-md-4 ml-md-0 text-start"
+        style="max-width: 800px">
+        <p class="px-4">
+          Hey there! I'm a tech enthusiast with a diverse background that
+          includes film/TV, acting, and even some stunt work. But above all, I'm
+          passionate about coding, anime, and video games.
+        </p>
+        <p class="px-4">
+          My love for coding started in my teens when I designed custom MySpace
+          layouts for bands. Since then, I've gained hands-on experience in web
+          development and design, including building websites for restaurants
+          during the Flash era.
+        </p>
+        <p class="px-4">
+          Fast forward to today, and I've completed a full-stack bootcamp, the
+          prestigious Harvard CS50 course, and Meta's front-end web developer
+          program. I'm currently sharpening my skills with the Codecademy
+          full-stack program and always seeking to expand my knowledge.
+        </p>
+        <p class="px-4">
+          In addition to my coding prowess, I'm also proficient in Adobe
+          Photoshop, Audition, Illustrator, and Premiere, making media-related
+          editing a breeze for me. So whether it's coding or editing, I'm ready
+          to bring my unique perspective and attention to detail to any project.
+        </p>
+        <p class="px-4">
+          I'm excited about the endless possibilities in the tech industry, and
+          I'm committed to becoming a proficient and confident developer who can
+          bring innovation to the table. When I'm not coding, you can find me
+          watching anime or exploring new video games. Let's create some amazing
+          things together!
+        </p>
+      </div>
+    </section>
 
-      <section id="contact">
-        <h2>Contact</h2>
-        <form action="https://formspree.io/f/xnqywnnn" method="POST">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required />
+    <section class="p-3" id="projects">
+      <h2 class="text-center mt-4 mb-4 pt-5">Projects</h2>
+      <!-- Projects -->
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 m-3">
+          <div class="col">
+            <div class="card h-100">
+              <a
+                href="https://cquiogue.github.io/mixedMessages/"
+                target="_blank">
+                <img
+                  src="images/project2.jpg"
+                  class="card-img-top"
+                  alt="Project Image" />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Final Fantasy Message Generator</h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#projectModal1">
+                    Description
+                  </button>
+                  <a
+                    href="https://cquiogue.github.io/mixedMessages/"
+                    target="_blank"
+                    class="btn btn-sm btn-outline-primary">
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
+          <div class="col">
+            <div class="card h-100">
+              <a
+                href="https://cquiogue.github.io/expandingCardsPersona/"
+                target="_blank">
+                <img
+                  src="images/project1.png"
+                  class="card-img-top"
+                  alt="Project Image" />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Persona Expanding Cards</h5>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#projectModal2">
+                    Description
+                  </button>
+                  <a
+                    href="https://cquiogue.github.io/expandingCardsPersona/"
+                    target="_blank"
+                    class="btn btn-sm btn-outline-primary">
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
+      <!-- Modals -->
+      <div
+        class="modal fade"
+        id="projectModal1"
+        tabindex="-1"
+        aria-labelledby="projectModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="projectModalLabel">
+                Final Fantasy Message Generator
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="images/project2.jpg"
+                class="img-fluid"
+                alt="Project Image" />
+              <p>
+                Originally just a random message generator for a small
+                JavaScript project that combines three randomized messages into
+                one, I decided to make an actual webpage for it complete with
+                graphics and fonts out of love for the series that pretty much
+                shaped my childhood.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <a
+                href="https://cquiogue.github.io/mixedMessages/"
+                target="_blank"
+                class="btn btn-primary">
+                View Project
+              </a>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="projectModal2"
+        tabindex="-1"
+        aria-labelledby="projectModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="projectModalLabel">
+                Persona Expanding Cards
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="images/project1.png"
+                class="img-fluid"
+                alt="Project Image" />
+              <p>
+                A desktop website using HTML and CSS to make expanding cards out
+                of wallpaper from the Persona videogame series.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <a
+                href="https://cquiogue.github.io/expandingCardsPersona/"
+                target="_blank"
+                class="btn btn-primary">
+                View Project
+              </a>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="projectModal3"
+        tabindex="-1"
+        aria-labelledby="projectModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="projectModalLabel">Project Title</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="images/project1.png"
+                class="img-fluid"
+                alt="Project Image" />
+              <p>Project Description</p>
+            </div>
+            <div class="modal-footer">
+              <a href="project-link" target="_blank" class="btn btn-primary">
+                View Project
+              </a>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="projectModal4"
+        tabindex="-1"
+        aria-labelledby="projectModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="projectModalLabel">Project Title</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src="images/project1.png"
+                class="img-fluid"
+                alt="Project Image" />
+              <p>Project Description</p>
+            </div>
+            <div class="modal-footer">
+              <a href="project-link" target="_blank" class="btn btn-primary">
+                View Project
+              </a>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact form -->
+    <section class="bg-white" id="contact">
+      <div class="container p-3">
+        <h2 class="mt-4 mb-3 text-center py-5">Contact Me</h2>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <form
+              action="https://formspree.io/f/xnqywnnn"
+              method="post"
+              role="form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary mt-3">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <button type="submit">Send</button>
-        </form>
-      </section>
-    </main>
-
-    <footer>
-      <p>Copyright &copy; 2023 Christopher Quiogue</p>
-      <ul>
-        <li><a href="http://www.linkedin.com/in/cquiogue">LinkedIn</a></li>
-        <li><a href="http://www.github.com/cquiogue">GitHub</a></li>
-        <li><a href="mailto: cquiogue@gmail.com">Email</a></li>
-      </ul>
+    <footer class="text-light pt-4 pb-2 mt-5 bg-dark">
+      <p class="text-center">&copy; 2023 Topher Quiogue</p>
     </footer>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

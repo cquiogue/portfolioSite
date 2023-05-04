@@ -1,32 +1,26 @@
-// Smooth scrolling to anchor links
-$('a[href^="#"]').click(function (event) {
-  var target = $(this.getAttribute('href'));
-  if (target.length) {
-    event.preventDefault();
-    $('html, body').stop().animate(
-      {
-        scrollTop: target.offset().top,
-      },
-      1000
-    );
+function collapseNavbar() {
+  // Get the navbar collapse element
+  const navbarCollapse = document.querySelector('.navbar-collapse');
+
+  // Collapse the navbar if it's not already collapsed
+  if (navbarCollapse.classList.contains('show')) {
+    navbarCollapse.classList.remove('show');
   }
-});
 
-// Get form element
-const form = document.querySelector('form');
+  // Scroll to the target element
+  var target = document.querySelector('#about');
+  target.scrollIntoView({ behavior: 'smooth' });
+}
 
-// Add submit event listener
-form.addEventListener('submit', function (event) {
-  event.preventDefault(); // prevent form submission
-
-  // Get form data
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const message = document.getElementById('message').value;
-
-  // Create mailto URL
-  const mailtoUrl = `mailto:cquiogue@gmail.com?subject=Contact Form Submission&body=Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
-
-  // Open mailto URL in new window
-  window.open(mailtoUrl, '_blank');
+// Listen for clicks on the document
+document.addEventListener('click', event => {
+  // Check if the click target is outside the navbar
+  if (
+    !navbarCollapse.contains(event.target) &&
+    navbarCollapse.classList.contains('show')
+  ) {
+    // Collapse the navbar
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    navbarToggler.click();
+  }
 });
